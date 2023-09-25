@@ -12,13 +12,7 @@ columns = 2
 
 players_per_column = len(badminton_players) 
 
-for i in range(columns):
-    start_index = i * players_per_column
-    end_index = start_index + players_per_column
-    column_players = badminton_players[start_index:end_index]
-
-    for player in column_players:
-        print(player.ljust(20), end=" ")
+print(badminton_players)
     print()  
 
 
